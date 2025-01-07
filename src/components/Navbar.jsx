@@ -11,13 +11,20 @@ function Navbar() {
                     <div key={i} className="text-sm 
                     cursor-pointer text-gray 
                     hover:text-white transition-all">
-                        {navItem}
+                        <a href="https://api.whatsapp.com/send?phone=5511987130883" target="_blank">
+                            {navItem}
+                        </a>
                     </div>
                 ))}
             </div>
             <div className="flex gap-8 max-sm:justify-end max-sm:flex-1">
-                <img src={searchImg} alt="search" width={20} height={20}/>
-                <img src={bagImg} alt="bag" width={20} height={20}/>
+                <a href="https://api.whatsapp.com/send?phone=5511987130883">
+                    <img src={searchImg} alt="search" width={20} height={20}/>
+                    
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5511987130883">
+                    <img src={bagImg} alt="bag" width={20} height={20}/>
+                </a>
             </div>
         </nav>
     </header>
